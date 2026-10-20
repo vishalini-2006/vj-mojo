@@ -1,0 +1,238 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 232 59% 21%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 28% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 28% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 28 95% 54%;
+    --primary-foreground: 222 47% 7%;
+
+    --secondary: 215 25% 22%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 20% 16%;
+    --muted-foreground: 215 16% 65%;
+
+    --accent: 215 25% 22%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 18% 22%;
+    --input: 215 18% 22%;
+    --ring: 28 95% 54%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 28 95% 54%;
+    --sidebar-primary-foreground: 222 47% 7%;
+    --sidebar-accent: 215 20% 14%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 215 18% 18%;
+    --sidebar-ring: 28 95% 54%;
+
+    /* Custom tokens */
+    /*--success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+
+    /* Simplified — subtle warm-to-orange, no heavy blue shift */
+    /*--brand-gradient: linear-gradient(135deg, hsl(28, 95%, 54%), hsl(20, 90%, 48%));
+
+    --card-hover: 222 24% 15%;
+    --surface-elevated: 222 24% 14%;
+
+    /* Removed heavy glow — replaced with a soft, barely-visible shadow */
+    /*--shadow-glow: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+    --category-card: 240 44% 25%;
+    --product-image-bg: 240 53% 21%;
+    --font-display: 'Oswald', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+}
+
+.bg-card {
+  background-color: #191951;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Removed text-transform: uppercase and heavy letter-spacing from headings */
+  /*h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: 0.01em;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  /* text-gradient kept but uses the simplified brand gradient */
+  /*.text-gradient {
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-brand-gradient {
+    background: var(--brand-gradient);
+  }
+
+  /* Simplified shadow — no more neon glow */
+  /*.shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .bg-surface-elevated {
+    background-color: hsl(var(--surface-elevated));
+  }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ── Page background: warm pinkish white (Glamzy style) ── */
+    --background: 320 30% 97%;
+    --foreground: 320 25% 12%;
+
+    /* ── Cards: pure white ── */
+    --card: 0 0% 100%;
+    --card-foreground: 320 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 320 25% 12%;
+
+    /* ✅ Primary: exact Glamzy color #96206c = HSL(321, 65%, 36%) */
+    --primary: 321 65% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    /* ── Secondary: light blush matching the primary hue ── */
+    --secondary: 321 40% 93%;
+    --secondary-foreground: 321 30% 20%;
+
+    /* ── Muted ── */
+    --muted: 321 20% 94%;
+    --muted-foreground: 321 10% 50%;
+
+    /* ── Accent ── */
+    --accent: 321 40% 92%;
+    --accent-foreground: 321 40% 20%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* ── Borders ── */
+    --border: 321 20% 90%;
+    --input: 321 20% 90%;
+    --ring: 321 65% 36%;
+
+    --radius: 0.75rem;
+
+    /* ── Sidebar: white like Glamzy's nav ── */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 321 25% 12%;
+    --sidebar-primary: 321 65% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 321 40% 95%;
+    --sidebar-accent-foreground: 321 25% 12%;
+    --sidebar-border: 321 20% 90%;
+    --sidebar-ring: 321 65% 36%;
+
+    /* ── Custom tokens ── */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+
+    /* ✅ Brand gradient using exact Glamzy color */
+    --brand-gradient: linear-gradient(135deg, #7a1a58, #96206c);
+
+    --card-hover: 321 30% 97%;
+    --surface-elevated: 0 0% 100%;
+    --shadow-glow: 0 2px 12px rgba(150, 32, 108, 0.15);
+
+    --category-card: 321 40% 93%;
+    --product-image-bg: 321 30% 95%;
+
+    --font-display: 'Oswald', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+}
+
+.bg-card {
+  background-color: hsl(0, 0%, 100%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: 0.01em;
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .font-body    { font-family: var(--font-body); }
+
+  .text-gradient {
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-brand-gradient { background: var(--brand-gradient); }
+  .shadow-glow       { box-shadow: var(--shadow-glow); }
+
+  .bg-surface-elevated {
+    background-color: hsl(var(--surface-elevated));
+  }
+}
